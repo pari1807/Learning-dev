@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar ul{
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+    margin: 0px 30px 50px 0px;
+    border: 2px solid black;
+    
+}

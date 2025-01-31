@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc()
+        {
+            var retVal =confirm("Do you want to continue ?");
+            if(retVal == true){
+                document.write("User wants to continue!");
+                return true;
+            }
+            else{
+                document.write("User does not wants to continue!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" onclick="abc()">
+</body>
+</html>

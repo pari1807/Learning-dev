@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border:  2px solid black;
+        /*width: 2048px;*/
+        width: 80vw;
+        box-sizing: border-box;
+        background-color: blue;
+        margin:auto;
+        height:10vh;
+        text-align: center;
+        padding:20px;
+    }
+    .container{
+        border:  2px solid black;
+        /*width: 2048px;*/
+        width: 80vw;
+        /*height:80vh;*/
+        min-height: 80vh;
+        min-width: 80vw;
+        box-sizing: border-box;
+        background-color: rgb(135, 255, 195);
+        margin:23px auto;
+
+    }
+    .container > div{
+        border:2px solid red;
+        font-size: 0.7em;
+        width: 50%;
+    }
+    .container > div > div{
+        border: 2px solid blue;
+        width: 50%;
+    }
+    .mycont{
+        margin:23px auto;
+        box-sizing: border-box;
+        background-color: red;
+        color: yellow;
+        font-size: 22px;
+        width: 80vw;
+    }
+</style>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex architecto consequuntur doloremque minus, laudantium velit, deserunt sapiente iure impedit qui at nulla cumque provident, quod ea et aut reiciendis molestias fuga repellendus doloribus? Nostrum quos explicabo itaque consectetur culpa doloremque rem ipsam! Provident, molestias vero. Nostrum sequi placeat, expedita vero inventore blanditiis aut itaque reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, pariatur maxime, error nostrum ipsam illum veritatis quaerat consectetur culpa suscipit dignissimos ex, quia quidem iste nihil fugit non! Cumque corrupti eius minus delectus quo pariatur error nisi dolor aut vero laudantium cum rem impedit consectetur illum ea, deleniti necessitatibus voluptatum? Ipsum eius at expedita numquam saepe mollitia reiciendis ratione ducimus? Fugiat quasi accusamus iure debitis
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, voluptatum saepe expedita iste explicabo vel praesentium id soluta eaque, ex aut ea aperiam?
+            </div> </div>
+    </div>
+    <div class="mycont">
+        I am another container.
+    </div>
+</body>
+</html>

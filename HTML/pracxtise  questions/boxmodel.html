@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aqua;
+        }
+        .container{
+            background-color: rgb(213 255 186);
+            border: 3px solid rgb(5, 5, 61);
+            /*we can se padding top right left bottom 
+            padding: 90px;*/
+            padding: 23px 56px 6px 78px; /*padding/margin= top right bottom left*/
+            margin: 19px 14px;
+            border-radius: 23px;
+            width: 533px;
+      
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti quis tempora. Assumenda totam eos porro quaerat nemo sequi doloribus culpa, neque mollitia. Expedita aspernatur ratione cum temporibus quod? Maiores?</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti quis tempora. Assumenda totam eos porro quaerat nemo sequi doloribus culpa, neque mollitia. Expedita aspernatur ratione cum temporibus quod? Maiores?</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti quis tempora. Assumenda totam eos porro quaerat nemo sequi doloribus culpa, neque mollitia. Expedita aspernatur ratione cum temporibus quod? Maiores?</p>
+    </div>
+</body>
+</html>

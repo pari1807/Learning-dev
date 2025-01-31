@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <h2>This is Forms HTML </h2>
+    <form action="backend.php"></form>
+    <!-- action attribute submits the forms in backend -->
+    Name:<input type="text">
+    <!-- input tag with text type and value as "name"-->
+    Role:<input type="text">
+    <hr>
+    <!-- we can use br tag for line break or we can use the div section to move enother line -->
+    <div>
+        Name:<input type="text" name="myName">
+    </div>
+    <br>
+    <div>
+        Role:<input type="text" name="Myrole"><br>
+    </div>
+    <br>
+    <div>
+        Email:<input type="email" name="myEmail" id="">
+    </div>
+    <br>
+    <div>
+        Date: <input type="date" name="myDate">
+    </div>
+    <div>
+        Bonus:<input type="number" name="Mybonus">
+    </div>
+    <div>
+        Gender :  <input type="radio" name="gender" > Male <input type="radio" name="gender">Female <input type="radio" name="gender">Other 
+    </div>
+    <br>
+    <div>
+       write about yourself:<br>
+        <textarea name="myText" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        Are you eligible ?:<input type="checkbox" name="myCheckbox">
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit-now">
+        <input type="reset" value="Reset now">
+    </div>
+    
+</body>
+</html>

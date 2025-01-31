@@ -1,0 +1,14 @@
+/*comment lines*/
+/*this will change the while p elements to red color*/
+p{
+    color: red;
+}
+/*this id selector will target the prticular element*/
+#redElement{
+    color: green;
+    background-color: hotpink;
+}
+/*id must be unique class can be multiple*/
+.pinkElement{
+    color: pink;
+}
