@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Css More on Selectors</title>
 </head>
+<style>
+    /*.box:first-child{
+        background-color: red;
+    }
+    .box::first-line{
+        color: blue;
+    }*/
+    /*.boxes *{
+        background-color: red;
+        color: white;
+        border: 3px solid black;
+    }
+    [data-color="primary"]{
+        background-color: blue;
+        margin-top: 50px;
+    }*/
+   /* .box:nth-child(2){
+        background-color: green;
+    }*/
+    .boxes::before{
+        content: "Hey Iam before";
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    .boxes::after{
+        content: "Hey Iam before";
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    ::selection{
+        background-color: green;
+        color: blue;
+    }
+</style>
 <body>
-    
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey Iam  box Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam pariatur sapiente harum cupiditate nihil eum, numquam, laudantium necessitatibus non quos necessitatibus ab ducimus! Iste minus cumque quidem nesciunt culpa nulla aspernatur est. </div>
+        <div class="box">Hey Iam  box</div>
+        <div class="box">Hey Iam  box</div>
+    </div>
 </body>
 </html>
