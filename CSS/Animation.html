@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: rgb(23, 11, 78);
+        height: 80vh;
+        width: 30vw;
+    }
+    .box{
+        width: 34px;
+        height: 45px;
+        background-color: rgb(9, 224, 224);
+        /*animation-name: Animation;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-delay: 2s;
+        animation-direction: alternate-reverse;*/
+        /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+        animation: Animation 1.3s infinite ease-out 2s alternate-reverse, Animation2 3s infinite ease-in-out 2s alternate-reverse;
+       /* animation: Animation 3s ease-in-out 3s 1;*/
+    }
+    @keyframes Animation{
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: yellow;
+            transform: translateX(400px);
+        }
+    }
+
+    @keyframes Animation2{
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        50%{
+            transform: rotate(220deg);
+        }
+        80%{
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(310deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>
