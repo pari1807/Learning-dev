@@ -20,3 +20,6 @@ console.log(a);
 //redeclaring any const is not possible in javascript 
 //const a = 20;
 console.log(a);
+
+// to check which type of data type is it 
+console.log(typeof(a));
