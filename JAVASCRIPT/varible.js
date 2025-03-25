@@ -22,4 +22,4 @@ console.log(a);
 console.log(a);
 
 // to check which type of data type is it 
-console.log(typeof(a));
+console.log(typeof(a));d
