@@ -44,3 +44,38 @@ let add = (a, b) => {
     return a + b;
 };
 console.log("Arrow function add(5, 3):", add(5, 3));
+
+
+
+function one(){
+    const username ="paritosh";
+
+    function two(){
+        const website = "paritosh.com";
+        console.log(username);
+    }
+    //console.log(website);
+    two();
+}
+one();
+
+if(true){
+    const username = "Rahul";
+    if(username === "Rahul"){
+        const website = "youtube";
+        console.log(username + website );
+        }
+       // console.log(website);
+}
+
+// +++++++++++++++++++++++++++++++++++ interesting ++++++++++++++++++++++++++++++++++++++++++++++
+
+function addone(num){
+    return num +1;
+}
+console.log(addone(5));
+
+const addTwo = function(num){
+    return num + 2;
+}
+console.log(addTwo(5));
