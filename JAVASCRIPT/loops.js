@@ -17,6 +17,7 @@ for (let i3 = 1; i3 <= 10; i3++) {
     if (i3 === 5) continue; // Skips iteration when i is 5
     console.log(i3);
 }
+//no learning point here, just a simple loop example
 
 // While Loop
 // Loop while a condition is true
