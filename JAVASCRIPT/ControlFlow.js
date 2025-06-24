@@ -38,6 +38,16 @@ switch (day) {
         break;
 }
 
+//5. Books Array Example:
+const books = [
+    { title: '1984', genre: 'Dystopian', published: 1949, edition: 'First' },
+    { title: 'To Kill a Mockingbird', genre: 'Fiction', published: 1960, edition: 'Second' },
+    { title: 'The Hobbit', genre: 'Fantasy', published: 1937, edition: 'Third' },
+    { title: 'A Brief History of Time', genre: 'Science', published: 1988, edition: 'First' }
+];
+
+console.log(books);
+
 // Additional Examples:
 
 // Additional If Statement Example: Check if a variable is defined
