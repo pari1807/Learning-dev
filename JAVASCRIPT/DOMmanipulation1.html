@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-black" id="container">
+        <h1 class="heading">DOM learning on Javascript</h1>
+        <p>Lorem, ipsum dolor sit amet</p>
+        <p>Another paragraph</p>
+    </div>
+
+    <script>
+    // Types of DOM Manipulations:
+    // 1. Content       (textContent, innerHTML)
+    // 2. Attributes    (getAttribute, setAttribute)
+    // 3. Styles        (element.style.property)
+    // 4. Classes       (classList.add/remove)
+    // 5. Creation      (createElement, appendChild)
+    // 6. Removal       (removeChild)
+    // 7. Events        (addEventListener)
+    // 8. Traversal     (parentNode, children, nextSibling)
+
+    // 1. SELECTION
+    const container = document.getElementById('container');           // by ID
+    const heading   = document.querySelector('.heading');             // first match
+    const paras     = document.querySelectorAll('#container p');      // NodeList of all <p>
+
+    // 2. CONTENT MANIPULATION
+    paras.forEach(p => p.textContent += ' (updated)');                // append text
+    console.log('heading.innerHTML:', heading.innerHTML);             // inspect HTML
+    heading.innerText = 'Updated DOM Learning in JS';                // plain text only
+
+    // 3. ATTRIBUTE MANIPULATION
+    heading.setAttribute('data-role', 'title');                      // add/update
+    console.log('has title attr?', heading.hasAttribute('title'));   // false
+    console.log('data-role via dataset:', heading.dataset.role);     // "title"
+
+    // 4. STYLE MANIPULATION
+    container.style.border       = '2px solid #fff';
+    container.style.padding      = '10px';
+    container.style.cssText     += ' background-color: #333; color: #eee;';
+
+    // 5. CLASS MANIPULATION
+    heading.classList.toggle('highlight');                           // add/remove
+    console.log('has highlight class?', heading.classList.contains('highlight'));
+
+    // 6. TRAVERSAL
+    console.log('first child element:', container.firstElementChild);
+    console.log('heading next sibling:', heading.nextElementSibling);
+
+    // 7. CREATION & INSERTION
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML = '<p>Inserted before first paragraph</p>';
+    container.insertBefore(newDiv, paras[0]);                       // before first <p>
+    heading.insertAdjacentHTML('afterend', '<p>Inserted after heading</p>');
+
+    // 8. CLONING & REPLACING
+    const cloneHeading = heading.cloneNode(true);
+    container.appendChild(cloneHeading);                            // append clone
+    const replacement = document.createElement('p');
+    replacement.textContent = 'This paragraph replaced the second one';
+    container.replaceChild(replacement, paras[1]);                  // replace second <p>
+
+    // 9. REMOVAL
+    cloneHeading.remove();                                           // direct remove
+    const toRemove = container.querySelector('p.dynamic');
+    if (toRemove) toRemove.parentElement.removeChild(toRemove);      // fallback remove
+
+    // 10. EVENTS
+    container.addEventListener('click', e => {
+        console.log('Container clicked on:', e.target.tagName);
+    });
+
+    // 11. NODELIST ➔ ARRAY UTILITIES
+    const paraArray = Array.from(paras);
+    paraArray.forEach(p => p.style.fontStyle = 'italic');
+
+    // --- NODELIST vs ARRAY ---
+    // querySelectorAll() returns a NodeList (array‐like, but not a true Array).
+    const nodeList = document.querySelectorAll('#container p');
+    console.log('NodeList:', nodeList);
+    // NodeList has forEach in modern browsers, but no map/filter/etc.
+
+    // Convert NodeList ➔ Array #1: Array.from()
+    const arr1 = Array.from(nodeList);
+    // Convert NodeList ➔ Array #2: Spread operator
+    const arr2 = [...nodeList];
+
+    console.log('Array via Array.from():', arr1);
+    console.log('Array via spread operator:', arr2);
+
+    // Now you can use all Array methods:
+    arr1.forEach((p, idx) => {
+        console.log(`Paragraph ${idx + 1} text:`, p.textContent);
+    });
+    const textsUpper = arr2.map(p => p.textContent.toUpperCase());
+    console.log('Uppercased texts:', textsUpper);
+
+    // You can also filter:
+    const filtered = arr1.filter(p => p.textContent.includes('Another'));
+    console.log('Filtered paragraphs:', filtered);
+    </script>
+</body>
+</html>
