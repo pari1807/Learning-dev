@@ -1,8 +1,10 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-
-
+import Functions from "./components/Functions";
+import Greet from "./components/Greeting";
+import ProductInfo from "./components/ProductInfo"
+import List from "./components/List";
 // function App(){
 //   return (
 //     <div className="App">
@@ -24,8 +26,12 @@ const App =() => {
       <Header/>
       <Main/>
       <Footer/>
+      <Functions/>
+      <Greet />
+      <ProductInfo />
+      <List />
     </div>
-  )
+  );
 }
 
 export default App;
