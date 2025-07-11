@@ -23,14 +23,24 @@ const List =() => {
         }
     ]
     return (
+        // <main>
+        //      {myList.map((item) => (
+        //         <ul key={item}>
+        //             <li>{item}</li>
+        //         </ul>
+        //     ))}; 
+        // </main>
+
         <main>
-            {/* {myList.map((item) => (
-                <ul key={item}>
-                    <li>{item}</li>
+            { userInfo.map((user) => (
+                <ul key={Math.random()}>
+                    <li>{user.username}</li>
+                    <li>{user.Location}</li>
+                    <li>{user.email}</li>
                 </ul>
-            ))}; */}
+            ))}
         </main>
-    )
+    );
 }
 
 export default List;
