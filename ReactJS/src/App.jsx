@@ -5,6 +5,9 @@ import Functions from "./components/Functions";
 import Greet from "./components/Greeting";
 import ProductInfo from "./components/ProductInfo"
 import List from "./components/List";
+import Props from "./components/Props";
+import Person from "./components/Person";
+import Conditional from "./components/Conditional";
 // function App(){
 //   return (
 //     <div className="App">
@@ -30,6 +33,9 @@ const App =() => {
       <Greet />
       <ProductInfo />
       <List />
+      <Props />
+      <Person name ="Rahul" age={21}/>
+      <Conditional />
     </div>
   );
 }
