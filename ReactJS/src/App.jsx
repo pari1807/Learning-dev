@@ -11,6 +11,9 @@ import Conditional from "./components/Conditional";
 import PropsLearning from "./components/Props/PropsLearning";
 import AdvancedPropsDemo from "./components/Props/AdvancedProps";
 import Persons from "./components/Props/Persons";
+import Weather from "./components/Conditionals/Weather";
+import UserStatus from "./components/Conditionals/UserStatus";
+import ConditionalGreeting from "./components/Conditionals/ConditionalGreeting";
 // function App(){
 //   return (
 //     <div className="App">
@@ -44,6 +47,9 @@ const App =() => {
       <Persons name="John" age={30} />
       <Persons name="Jane" age={25} />
       <Persons name="Doe" age={28} />
+      <Weather />
+      <UserStatus loggedIn={true} isAdmin={False} />
+      <ConditionalGreeting timeOfDay={morning} />
     </div>
   );
 }
