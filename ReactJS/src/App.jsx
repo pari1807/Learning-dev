@@ -8,6 +8,9 @@ import List from "./components/List";
 import Props from "./components/Props";
 import Person from "./components/Person";
 import Conditional from "./components/Conditional";
+import PropsLearning from "./components/Props/PropsLearning";
+import AdvancedPropsDemo from "./components/Props/AdvancedProps";
+import Persons from "./components/Props/Persons";
 // function App(){
 //   return (
 //     <div className="App">
@@ -36,6 +39,11 @@ const App =() => {
       <Props />
       <Person name ="Rahul" age={21}/>
       <Conditional />
+      <PropsLearning />
+      <AdvancedPropsDemo />
+      <Persons name="John" age={30} />
+      <Persons name="Jane" age={25} />
+      <Persons name="Doe" age={28} />
     </div>
   );
 }
