@@ -6,6 +6,8 @@ import CopyInput from "./components/Portals/CopyInput";
 import BasicEffect from "./components/useEffects/BasicEffect";
 import CounterEffect from "./components/useEffects/CounterEffect";
 import FetchDataEffect from "./components/useEffects/FetchDataEffect";
+import {UserProvider} from "./components/ContextAPI/UserContext";
+import Userprofile from "./components/ContextAPI/Userprofile";
 
 const App = () => {
   return (
@@ -18,6 +20,11 @@ const App = () => {
       <BasicEffect />
       <CounterEffect />
       <FetchDataEffect />
+
+      <UserProvider>
+        <Userprofile />
+      </UserProvider>
+      
     </section>
   );
 }
