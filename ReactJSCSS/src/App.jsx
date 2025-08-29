@@ -1,6 +1,7 @@
 import StyleCard from "./components/StyleCard";
 import ProfileCard from "./components/ProfileCard";
 import State from "./components/useStates/State";
+import Counter from "./components/useStates/Counter";
 
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
       <StyleCard />
       <ProfileCard />
       <State />
-      
+      <Counter />
     </section>
   );
 }

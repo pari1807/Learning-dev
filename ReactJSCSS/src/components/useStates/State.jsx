@@ -1,7 +1,4 @@
 // Import useState hook from React - this allows us to add state to functional components
-//import { useState, useEffect } from "react";
-
-// Import useState hook from React - this allows us to add state to functional components
 // Import useEffect hook - this allows us to perform side effects like localStorage operations
 import { useState, useEffect } from "react";
 
