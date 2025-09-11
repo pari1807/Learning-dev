@@ -8,6 +8,7 @@ import CounterEffect from "./components/useEffects/CounterEffect";
 import FetchDataEffect from "./components/useEffects/FetchDataEffect";
 import {UserProvider} from "./components/ContextAPI/UserContext";
 import Userprofile from "./components/ContextAPI/Userprofile";
+import UpdateUser from "./components/ContextAPI/UpdateUser";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
 
       <UserProvider>
         <Userprofile />
+        <UpdateUser />
       </UserProvider>
       
     </section>
