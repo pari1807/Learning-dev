@@ -10,7 +10,8 @@ import {UserProvider} from "./components/ContextAPI/UserContext";
 import Userprofile from "./components/ContextAPI/Userprofile";
 import UpdateUser from "./components/ContextAPI/UpdateUser";
 import Counter from "./components/useReducers/Counter";
-
+import FocusInput from "./components/useRef/FocusInput";
+import Timer from "./components/useRef/Timer";
 const App = () => {
   return (
     <section>
@@ -29,6 +30,8 @@ const App = () => {
       </UserProvider>
       
       <Counter />
+      <FocusInput />
+      <Timer />
     </section>
   );
 }
