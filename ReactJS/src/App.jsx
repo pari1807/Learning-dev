@@ -48,8 +48,8 @@ const App =() => {
       <Persons name="Jane" age={25} />
       <Persons name="Doe" age={28} />
       <Weather />
-      <UserStatus loggedIn={true} isAdmin={False} />
-      <ConditionalGreeting timeOfDay={morning} />
+      <UserStatus loggedIn={true} isAdmin={false} />
+      <ConditionalGreeting timeOfDay="morning" />
     </div>
   );
 }
