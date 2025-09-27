@@ -15,7 +15,7 @@ const Todo = () => {
                     text: inputValue,
                     id: Math.floor(Math.random() * 10000),
                 })
-            );
+            ); 
             setInputValue("");
         }
     };
